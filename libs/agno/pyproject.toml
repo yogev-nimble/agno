@@ -192,6 +192,7 @@ twelvelabs = ["twelvelabs>=1.2.8"]
 valyu = ["valyu"]
 wavespeed = ["wavespeed"]
 webex = ["webexpythonsdk"]
+webrouter = ["webrouter[search,extract]>=0.14.0,<1; python_version >= '3.11'"]
 whatsapp-crypto = ["cryptography>=41.0"]
 yfinance = ["yfinance"]
 you-com = []
@@ -360,6 +361,7 @@ tools = [
   "agno[valyu]",
   "agno[wavespeed]",
   "agno[webex]",
+  "agno[webrouter]",
   "agno[whatsapp-crypto]",
   "agno[yfinance]",
   "agno[you-com]",
@@ -712,6 +714,7 @@ module = [
   "wavespeed.*",
   "weaviate.*",
   "web3.*",
+  "web_router.*",
   "webexpythonsdk.*",
   "wikipedia.*",
   "yaml.*",

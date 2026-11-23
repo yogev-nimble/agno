@@ -1,5 +1,21 @@
 # Test Log
 
+### webrouter_tools.py
+
+**Status:** PASS (toolkit calls, no API keys); agent run not tested
+
+**Description:** Web search and page extraction through `WebRouterTools` with no
+provider keys set. The example's tool calls were made directly: sync and async
+`web_search`, `web_search` limited to `docs.python.org` and `peps.python.org`
+with JSON output, and sync and async `extract_url_content` on
+`https://docs.agno.com/introduction`.
+
+**Result:** Every call returned results or page content from a keyless backend.
+A cloud metadata URL passed to `extract_url_content` was refused without being
+sent. The LLM-driven `print_response` runs need a model key and were not run.
+
+---
+
 ### sixtydb_tools.py
 
 **Status:** PASS (local HTTP and cookbook checks); live agent run pending
