@@ -8,9 +8,7 @@ try:
     from web_router import AsyncWebRouter, ExtractResponse, SearchResponse, WebRouter, WebRouterError
     from web_router.routing.url_policy import public_only
 except ImportError:
-    raise ImportError(
-        '`webrouter` not installed (requires Python 3.11+). Please install using `pip install "webrouter[search,extract]"`'
-    )
+    raise ImportError("`webrouter` not installed (requires Python 3.11+). Please install using `pip install webrouter`")
 
 
 class WebRouterTools(Toolkit):
